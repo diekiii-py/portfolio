@@ -228,7 +228,7 @@ window.siteMotion = (function() {
 			]
 		},
 		{
-			text: 'ur mom lol',
+			text: 'your client',
 			color: '#b0155a',
 			shapes: [
 				shape(14, 22, 22, 15, 0.64, true),
