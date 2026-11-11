@@ -3684,7 +3684,7 @@ input, select, textarea {
 			z-index: 2;
 		}
 
-		#banner header.hero-tagline {
+		#banner .hero-tagline {
 			border: 0;
 			display: block;
 			margin: 0 0 0.75em;
@@ -4511,7 +4511,7 @@ input, select, textarea {
 
 		#banner .inner { padding: 0.65em 1em; }
 		#banner .hero-shapes { inset: 56px 0 0; }
-		#banner header.hero-tagline { margin-bottom: 0.5em; }
+		#banner .hero-tagline { margin-bottom: 0.5em; }
 
 		#banner .perspective-carousel {
 			grid-template-rows: repeat(6, 1.25em);
