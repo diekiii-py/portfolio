@@ -1,21 +1,23 @@
 <!DOCTYPE HTML>
 <html lang="en">
 	<head>
-		<title>Selected Projects — Jada van der Heijden</title>
+		<title>All Projects — Jada van der Heijden</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
 	</head>
 	<body class="projects-page is-preload">
 		<div id="page-wrapper">
+			<!-- Header -->
 			<header id="header" class="site-header">
-				<a class="site-mark" href="index.html" aria-label="Jada van der Heijden home">
+				<a class="site-mark" href="index2.html" aria-label="Jada van der Heijden home">
 					<img id="logo" src="images/logo.png" alt="Jada van der Heijden" />
 				</a>
 				<nav id="nav" aria-label="Main navigation">
 					<ul>
-						<li><a href="index.html">Home</a></li>
+						<li><a href="index2.html">Home</a></li>
 						<li class="current"><a href="projects.html" aria-current="page">Projects</a></li>
 						<li><a href="about.html">About</a></li>
 						<li><a href="fun.html">Creative</a></li>
@@ -25,27 +27,66 @@
 			</header>
 
 			<article id="main">
-				<div id="projects-overview">
-					<header class="special container projects-intro">
-						<span class="icon solid fa-laptop"></span>
-						<h2>Research made <strong>tangible.</strong></h2>
-						<p>Selected work across UX research, interaction design, and human-technology interaction.</p>
-					</header>
+				<!-- Projects Header -->
+				<section class="wrapper style1 special projects-header">
+					<div class="inner">
+						<header class="major">
+							<h2>All Projects</h2>
+						</header>
+					</div>
+				</section>
 
-					<section class="projects-carousel wrapper style3 container" aria-label="Selected projects">
-						<div class="projects-carousel__top">
-							<p id="projects-position" aria-live="polite">01 / 17</p>
-							<div class="projects-carousel__controls">
-								<button class="carousel-control" id="projects-previous" type="button" aria-label="Previous projects">←</button>
-								<button class="carousel-control" id="projects-next" type="button" aria-label="Next projects">→</button>
+				<!-- Projects Grid Section -->
+				<section class="wrapper style3 special projects-grid-section">
+					<div class="inner">
+						<div class="row gtr-50 projects-grid" id="projects-track">
+							<!-- Projects will be dynamically loaded here -->
+							<div class="col-6 col-12-narrower">
+								<section class="project-card">
+									<div class="project-cover"></div>
+									<div class="project-description">
+										<h4>Description</h4>
+										<p class="project-meta"><strong>Grolsch</strong> <em>| UX research</em></p>
+									</div>
+								</section>
+							</div>
+							<div class="col-6 col-12-narrower">
+								<section class="project-card">
+									<div class="project-cover"></div>
+									<div class="project-description">
+										<h4>Description</h4>
+										<p class="project-meta"><strong>DanceHub</strong> <em>| Concept Design</em></p>
+									</div>
+								</section>
+							</div>
+							<div class="col-6 col-12-narrower">
+								<section class="project-card">
+									<div class="project-cover"></div>
+									<div class="project-description">
+										<h4>Description</h4>
+										<p class="project-meta"><strong>Project DELPHI</strong> <em>| Dashboard Design</em></p>
+									</div>
+								</section>
+							</div>
+							<div class="col-6 col-12-narrower">
+								<section class="project-card">
+									<div class="project-cover"></div>
+									<div class="project-description">
+										<h4>Description</h4>
+										<p class="project-meta"><strong>+ View More</strong> <em>| Portfolio</em></p>
+									</div>
+								</section>
 							</div>
 						</div>
+						<footer>
+							<ul class="buttons">
+								<li><a href="index2.html" class="button">Back Home</a></li>
+							</ul>
+						</footer>
+					</div>
+				</section>
 
-						<div class="projects-track" id="projects-track" tabindex="0" aria-label="Project cards; scroll horizontally"></div>
-						<p class="projects-hint">Scroll or use the arrows to explore all 17 case studies.</p>
-					</section>
-				</div>
-
+				<!-- Hidden Project View Section -->
 				<section id="project-view" class="is-hidden">
 					<header class="special container project-intro">
 						<span class="icon solid fa-laptop"></span>
@@ -84,14 +125,27 @@
 				</section>
 			</article>
 
-			<footer id="footer">
-				<ul class="copyright">
-					<li>&copy; Jada van der Heijden</li>
-					<li>UX Research &amp; Interaction Design Portfolio</li>
-				</ul>
+			<!-- Footer -->
+			<footer id="footer" class="footer-figma">
+				<div class="footer-left">
+					<p class="footer-copyright">
+						<span>© Jada van der Heijden</span>
+						<span class="footer-divider">|</span>
+						<span>All rights reserved.</span>
+					</p>
+				</div>
+				<div class="footer-right">
+					<a href="https://www.linkedin.com/in/jadavdheijden" class="footer-icon-link" aria-label="LinkedIn">
+						<i class="icon brands fa-linkedin-in"></i>
+					</a>
+					<a href="mailto:jadavdheijden@gmail.com" class="footer-icon-link" aria-label="Email">
+						<i class="icon solid fa-envelope"></i>
+					</a>
+				</div>
 			</footer>
 		</div>
 
+		<!-- Scripts -->
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.dropotron.min.js"></script>
 		<script src="assets/js/jquery.scrolly.min.js"></script>

@@ -2559,10 +2559,9 @@ input, select, textarea {
 
 			#banner .inner header {
 				display: inline-block;
-				border-bottom: solid 2px;
-				border-top: solid 2px;
+				border: 0;
 				margin: 0 0 2em 0;
-				padding: 3px 0 3px 0;
+				padding: 0;
 			}
 
 				#banner .inner header h2 {
@@ -3513,8 +3512,7 @@ input, select, textarea {
 	}
 
 		body.index #header.alt.site-header nav {
-			right: auto;
-			top: auto;
+			display: none;
 		}
 
 		body.index #header.alt.site-header #logo {
@@ -4572,4 +4570,222 @@ input, select, textarea {
 		.creative-work { height: 9em; }
 		.creative-work.tall { height: 14em; }
 		.creative-work figcaption { font-size: 0.72em; opacity: 1; padding: 0.7em; }
+	}
+
+	/* Project Highlights Section (Figma Design) */
+	.project-highlights {
+		background: #fff !important;
+		padding: 3em 0 !important;
+	}
+
+	.project-highlights .major {
+		margin-bottom: 2em;
+	}
+
+	.project-highlights .major h2 {
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		color: #30344d;
+	}
+
+	.project-grid-container {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 2em;
+	}
+
+	.project-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 40px;
+		width: 100%;
+		max-width: 1349px;
+	}
+
+	.project-card {
+		display: flex;
+		flex-direction: column;
+		background: #fff;
+		border: none;
+		transition: none;
+		gap: 1.5em;
+		padding: 0;
+	}
+
+	.project-card:hover {
+		transform: none;
+		box-shadow: none;
+	}
+
+	.project-card:hover .project-cover a {
+		transform: scale(1.05);
+	}
+
+	.project-cover {
+		width: 100%;
+		height: 300px;
+		background: #fff;
+		flex-shrink: 0;
+		border: 2px solid #460047;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.project-cover a {
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		background-position: center;
+		transition: transform 0.3s ease-in-out;
+	}
+
+	.project-description {
+		padding: 0;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		gap: 2em;
+		flex: 1;
+		width: 100%;
+	}
+
+	.project-description h4 {
+		font-size: 24px;
+		font-family: 'Lato', sans-serif;
+		font-weight: 400;
+		color: #460047;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		margin: 0;
+		padding: 0;
+		flex-shrink: 0;
+	}
+
+	.project-meta {
+		margin: 0;
+		padding: 0;
+		font-size: 18.667px;
+		font-family: 'Lato', sans-serif;
+		font-weight: 300;
+		font-style: italic;
+		color: #460047;
+		flex-shrink: 0;
+		white-space: nowrap;
+	}
+
+	.project-meta strong {
+		font-weight: 400;
+		font-style: normal;
+		margin-right: 0.25em;
+		display: inline;
+	}
+
+	.project-meta em {
+		font-style: normal;
+		display: inline;
+	}
+
+	/* Divider Section */
+	.divider-section {
+		padding: 2em 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #fff;
+	}
+
+	.divider-line {
+		width: 90%;
+		max-width: 1200px;
+		height: 1px;
+		border-top: 1px dashed #b8b4c8;
+		position: relative;
+	}
+
+	.divider-line::before,
+	.divider-line::after {
+		content: '';
+		position: absolute;
+		top: -4px;
+		width: 8px;
+		height: 8px;
+		border-left: 1px solid #8b7b9e;
+		border-top: 1px solid #8b7b9e;
+	}
+
+	.divider-line::before {
+		left: 2%;
+	}
+
+	.divider-line::after {
+		right: 2%;
+	}
+
+	/* Figma Footer Styling */
+	.footer-figma {
+		background-color: #460047 !important;
+		color: white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 1em 5em;
+		width: 100%;
+		gap: 2em;
+	}
+
+	.footer-left {
+		flex: 1 0 auto;
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	.footer-copyright {
+		margin: 0;
+		font-family: 'Lato', sans-serif;
+		font-weight: 300;
+		font-size: 0.9em;
+		color: white;
+		display: flex;
+		gap: 0.5em;
+		align-items: center;
+	}
+
+	.footer-divider {
+		color: white;
+		margin: 0 0.25em;
+	}
+
+	.footer-right {
+		flex: 1 0 auto;
+		display: flex;
+		justify-content: flex-end;
+		gap: 0.5em;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	.footer-icon-link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 52.5px;
+		height: 52.5px;
+		border-radius: 52.5px;
+		background-color: #460047;
+		color: white;
+		text-decoration: none;
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+		border: 2px solid rgba(255, 255, 255, 0.2);
+	}
+
+	.footer-icon-link:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+	}
+
+	.footer-icon-link i {
+		font-size: 1.3em;
+		color: white;
 	}
